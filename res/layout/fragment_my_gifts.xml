@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9D6C5" 
+    android:orientation="vertical">
+<View
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="#B9E1E0" />
+   <LinearLayout  android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="80"
+       
+       >
+  <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/main_List_gifts"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#819FF7"
+            android:background="@android:color/transparent"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/button_plus1" 
+                android:src="@drawable/button_plus_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+   
+   
+    />
+</LinearLayout>
+<RelativeLayout
+                android:layout_width="fill_parent"
+               android:layout_height="0dp"
+                android:layout_weight="17"
+                android:background="#B9E1E0" >
+  
+     <ImageButton
+               android:id="@+id/button_plus2" 
+                android:src="@drawable/button_plus_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+               android:gravity="right"
+               android:scaleType="centerInside"
+                android:background="@android:color/transparent"
+                />
+    
+  </RelativeLayout>
+</LinearLayout>
